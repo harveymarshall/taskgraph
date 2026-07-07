@@ -30,8 +30,8 @@ export function TaskColumn({ title, tasks }: TaskColumnProps) {
             {task.description ? <p>{task.description}</p> : null}
 
             <div className="task-card__meta">
-              {task.repo ? <span>{task.repo}</span> : null}
-              {task.branch ? <span>{task.branch}</span> : null}
+              {task.github_repo ? <span>{task.github_repo}</span> : null}
+              {task.branch_name ? <span>{task.branch_name}</span> : null}
             </div>
           </article>
         ))}
